@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="/favicon.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<script type="module" src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.esm.js"></script>
+	<script nomodule src="https://cdn.jsdelivr.net/npm/@ionic/core/dist/ionic/ionic.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@ionic/core/css/ionic.bundle.css" />
+	
+
+		
+
+		<link rel="modulepreload" href="/./_app/start-075e6ad8.js">
+		<link rel="modulepreload" href="/./_app/chunks/vendor-125a99f0.js">
+		<link rel="modulepreload" href="/./_app/pages/__layout.svelte-f6cb6bd1.js">
+		<link rel="modulepreload" href="/./_app/chunks/audioStore-bf7aa498.js">
+		<link rel="modulepreload" href="/./_app/pages/covid/__layout.svelte-449e9224.js">
+		<link rel="modulepreload" href="/./_app/pages/covid/index.svelte-c76ebf0d.js">
+		<link rel="stylesheet" href="/./_app/assets/start-0826e215.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/__layout.svelte-696c48d9.css">
+		<link rel="stylesheet" href="/./_app/assets/pages/covid/index.svelte-0f081de0.css">
+
+		<script type="module">
+			import { start } from "/./_app/start-075e6ad8.js";
+			start({
+				target: document.querySelector("#svelte"),
+				paths: {"base":"","assets":"/."},
+				session: {},
+				host: location.host,
+				route: true,
+				spa: false,
+				trailing_slash: "never",
+				hydrate: {
+					status: 200,
+					error: null,
+					nodes: [
+						import("/./_app/pages/__layout.svelte-f6cb6bd1.js"),
+						import("/./_app/pages/covid/__layout.svelte-449e9224.js"),
+						import("/./_app/pages/covid/index.svelte-c76ebf0d.js")
+					],
+					page: {
+						host: location.host, // TODO this is redundant
+						path: "/covid",
+						query: new URLSearchParams(""),
+						params: {}
+					}
+				}
+			});
+		</script>
+</head>
+
+<body>
+	<div id="svelte">
+
+
+<body><ion-split-pane content-id="main" when="md"><ion-menu content-id="main" side="start" type="overlay"><ion-header translucent><ion-toolbar><ion-title>Menu</ion-title></ion-toolbar></ion-header>
+      <ion-content fullscreen><ion-list><a href="/"><ion-item><ion-icon name="home" slot="start"></ion-icon>
+              <ion-label>Home</ion-label></ion-item></a>
+          <a href="/covid"><ion-item><ion-icon name="chatbubbles" slot="start"></ion-icon>
+              <ion-label>Covid</ion-label></ion-item></a>
+          <a href="/setting"><ion-item><ion-icon name="settings" slot="start"></ion-icon>
+              <ion-label>Settings</ion-label></ion-item></a></ion-list></ion-content></ion-menu>
+
+    <div class="ion-page" id="main"><ion-header translucent><ion-toolbar><ion-buttons slot="start"><ion-back-button defaulthref="/"></ion-back-button></ion-buttons>
+          <ion-button href="/">Home</ion-button>
+          <ion-button href="/covid">หน้า Canva</ion-button>
+          <ion-button href="/learning">หน้า SlideShow</ion-button>
+
+          <ion-button>Pause</ion-button>
+          <ion-button>Stop</ion-button>
+          ระดับเสียง
+          <input type="number" step="0.1" value="1">
+          ความเร็วเสียง
+          <input type="number" step="0.1" value="1"></ion-toolbar></ion-header>
+      <ion-content class="ion-padding"><a href="https://www.canva.com/design/DAElL0uMpNA/YiEX1ugnP0to0boVYGmzxQ/view?utm_content=DAElL0uMpNA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink" target="_blank">LINK</a>
+<a href="/covid/whatiscovid">Covid?</a>
+
+<div class="svelte-1175yja"><video src="covid.mp4" class="svelte-1175yja" currentTime="0" paused><track kind="captions"></video>
+
+  <div class="controls svelte-1175yja" style="opacity: 0"><progress value="0" class="svelte-1175yja"></progress>
+
+    <div class="info svelte-1175yja"><span class="time svelte-1175yja">0:00</span>
+      <span class="svelte-1175yja">กดเพื่อ เล่นหรือหยุด play / ลากเพื่อค้นหา</span>
+      <span class="time svelte-1175yja">...</span></div></div>
+</div></ion-content></div></ion-split-pane></body>
+
+
+
+	
+</div>
+
+</body>
+
+</html>
